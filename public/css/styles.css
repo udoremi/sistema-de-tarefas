@@ -1,0 +1,387 @@
+* {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  background-color: #fff;
+}
+
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opc-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-nav{
+  color: #000;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+
+.links-nav:hover{
+  color: #a56ceb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar img{
+  width: 200px;
+}
+
+.navbar .btn-cadastro{
+  background-color: #a56ceb;
+  color: #fff;
+}
+
+.navbar .btn-cadastro a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .btn-sair{
+  width: 80px;
+  padding: 5px;
+  background-color: #a56ceb;
+  color: #fff;
+}
+
+.container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 60px;
+  height: (100vh - 64px);
+}
+
+.container h1{
+  font-weight: bold;
+}
+
+.text-home{
+  width: 700px;
+}
+
+.container .text-home p{
+  font-size: 18px;
+}
+
+.img-container img{
+  width: 1000px;
+}
+
+.dashboard-title-container{
+  margin-top: 60px;
+}
+
+.dashboard-task-container form{
+  display: inline-block;
+}
+
+
+/* Lista de tarefas */
+/* #cards-container {
+  max-width: 1099px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#events-container .card {
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+  border-radius: 10px;
+  padding: 0;
+  margin: .5%;
+  display: flex;
+  flex-direction: column;
+}
+
+#events-container img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card .card-date {
+  font-size: 12px;
+  color: #CCC;
+}
+
+.card .card-title {
+  color: #212121;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card-participants {
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 15px;
+}
+
+.card .card-body .btn {
+    margin-top: auto;
+} */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 320px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 200px; /* Altura mínima para consistência */
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-body-content{
+  margin-top: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.4em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #555;
+  flex-grow: 1;
+  width: 278px;
+  /* height: 145px; */
+}
+
+.card img{
+  width: 278px;
+  height: 139px;
+}
+
+.card-meta{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.card-view-button{
+  background-color: #a56ceb;
+  color: #fff;
+}
+
+.card-view-button:hover{
+  color: #fff;
+}
+
+/* Form Create */
+#task-create-container{
+  margin-top: 30px;
+}
+
+.btn-create{
+  background-color: #a56ceb;
+  color: #fff;
+  padding: 10px;
+}
+
+.btn-edit{
+  background-color: #a56ceb;
+  color: #fff;
+  padding: 10px;
+}
+
+.drag-area{
+  border: 2px dashed #a56ceb;
+  height: 283.328px;
+  width: 425px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.drag-area.active{
+  border: 2px solid #fff;
+}
+
+.drag-area .icon{
+  font-size: 40px;
+  color: #a56ceb;
+}
+
+.drag-area header{
+  font-size: 20px;
+  font-weight: 500;
+  color: #a56ceb;
+}
+
+.drag-area span{
+  font-size: 15px;
+  font-weight: 500;
+  color: #a56ceb;
+  margin: 10px 0 15px 0;
+  font-weight: bold;
+}
+
+.drag-area button{
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #a56ceb;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.drag-area img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* EDIT */
+
+.img-preview{
+  width: 425px;
+}
+
+/* Comment */
+
+.task-container-coment{
+  margin-top: 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.task-image-styled{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.task-info-styled{
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-info-styled h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.task-info-styled span{
+  color: #adadad;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 3px;
+}
+
+.task-info-styled svg{
+  margin-top: 3px;
+}
+
+.task-description{
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 3px;
+}
+
+.add-comment{
+  margin-bottom: 40px;
+}
+
+#comments-section  ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#comments-section ul li{
+  margin-bottom: 15px;
+  margin-top: 8px;
+}
+
+#comments-section .comment-container{
+  display: flex;
+  flex-direction: column;
+}
+
+#comments-section .comment-container .comment-action{
+  display: flex;
+  align-items: center;
+}
+
+.comment-container .comment-btns{
+  margin-left: 20px;
+}
+
+#comments-section .btn-save-comment, .btn-alter-comment{
+  background-color: #a56ceb;
+  color: #fff;
+}
+
+.btn-alter-comment:hover{
+  color: #fff;
+}
+
+.btn-edit:hover{
+  color: #fff;
+}
+
+.btn-create:hover{
+  color: #fff;
+}
+
+.msg{
+  background-color: #D4EDDA;
+  color: #155724;
+  border: 1px solid #C3E6CB;
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px;
+}
